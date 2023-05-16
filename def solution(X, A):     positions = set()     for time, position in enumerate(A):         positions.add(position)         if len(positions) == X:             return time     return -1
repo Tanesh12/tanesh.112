@@ -1,0 +1,7 @@
+def solution(X, A):
+    positions = set()
+    for time, position in enumerate(A):
+        positions.add(position)
+        if len(positions) == X:
+            return time
+    return -1
